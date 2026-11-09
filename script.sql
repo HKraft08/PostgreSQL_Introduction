@@ -49,6 +49,15 @@ INSERT INTO emp_info VALUES
 	
 SELECT * FROM emp_info;
 
+ALTER TABLE emp_info
+ADD id_number VARCHAR(13);
+
+UPDATE emp_info
+SET id_number = '0212035140097'
+WHERE gender = 'M';
+
+DELETE FROM emp_info
+WHERE name = 'Makwa';
 
 
 
